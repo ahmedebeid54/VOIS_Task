@@ -124,7 +124,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="WriteEmpDataWorkBook" sap:VirtualizedContainerService.HintSize="833.2,3715.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="WriteEmpDataWorkBook" sap:VirtualizedContainerService.HintSize="846,3715.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -222,7 +222,7 @@
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:FileExistsX DisplayName="File Exists" Exists="[boolPostConditionMet]" sap:VirtualizedContainerService.HintSize="451.2,166.4" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[in_strOutputFolderDirectory + &quot;/Onboarding_Report_&quot; + Date.Now.ToString(&quot;yyyy/MM/dd&quot;) + &quot;.xlsx&quot;]" />
+                      <ui:FileExistsX DisplayName="File Exists" Exists="[boolPostConditionMet]" sap:VirtualizedContainerService.HintSize="451.2,166.4" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="[in_strOutputFolderDirectory + &quot;/Onboarding_Report_&quot; + Date.Now.ToString(&quot;yyyy-MM-dd&quot;) + &quot;.xlsx&quot;]" />
                       <If Condition="[boolPostConditionMet]" DisplayName="If - PostCond is Met" sap:VirtualizedContainerService.HintSize="451.2,703.2" sap2010:WorkflowViewState.IdRef="If_2">
                         <If.Then>
                           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="Sequence_12">

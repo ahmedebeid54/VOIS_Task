@@ -16,6 +16,17 @@
           }
         },
         "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "out_dtSuccessfullEmpData": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
       }
     }
   ]
